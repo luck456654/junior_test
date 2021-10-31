@@ -250,3 +250,420 @@
     margin-bottom: 9px;
     color: #808191;
   }
+  
+  
+  
+  
+  
+  
+  
+/*  Стили Баннера */
+  .banner{
+	width:972px;
+	height:250px;
+	background-color:#FFFFFF;
+	border-radius:24px;
+	display:flex;
+	flex-direction:row;
+	padding-left:33px;
+	padding-right:33px;
+}
+.bannerimg{
+	width:452px;
+	height:250px;
+	margin-left:206px;
+}
+.banner-header{
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 110%;
+	padding-top:29px;
+}
+.bannertext{
+	width:256px;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 135%;
+	padding-top:20px;
+}
+.add-track{
+	align-items: center;
+	
+	width: 163px;
+	height: 47px;
+	margin-top:40px;
+
+	background: #6C5DD3;
+	border-radius: 12px;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 20px;
+    color: #FFFFFF;
+	display:flex;
+	flex-direction:row;
+}
+.img-button-addtrack{
+	width:21px;
+	height:21px;
+	background-color:#8579DA;
+	border-radius:50px;
+	color:#FFFFFF;
+	margin-right:5px;
+}
+
+
+
+/*  Стили модального окна добавление трэка десктопная версия*/
+.anelumen {
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  -webkit-transition: top 0s .7s, opacity .7s 0s;
+  transition: top 0s .7s, opacity .7s 0s;
+}
+
+.anelumen:target {
+  top: 0;
+  opacity: 1;
+  -webkit-transition: none;
+  transition: none;
+}
+
+.anelumen figure {
+  width: 100%;
+  max-width: 530px;
+  position: relative;
+  padding: 1.8em;
+  opacity: 0;
+  background-color: white;
+  -webkit-transition: opacity .7s;
+  transition: opacity .7s;
+}
+
+.anelumen.lowingnuska figure {
+  width: 381px;
+  height: 581px;
+  background: #FFFFFF;
+  border-radius: 32px;
+  padding-top: 8px;
+  border: 3px solid #aaabad;
+  margin-top: -10px;
+}
+
+
+.anelumen:target figure {
+  opacity: 1;
+}
+
+.anelumen.lowingnuska .compatibg-ukastywise {
+  text-decoration: none;
+  position: absolute;
+  right: 8px;
+  top: 0px;
+  font-size: 40px;
+  margin-top:12px;
+  margin-right:12px;
+}
+
+.anelumen .nedismiseg {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #7D7D7E;
+  content: "";
+  cursor: default;
+  visibility: hidden;
+  -webkit-transition: all .7s;
+  transition: all .7s;
+  opacity: 0.8;
+}
+
+.anelumen:target .nedismiseg {
+  visibility: visible;
+ } 
+  .img-close{
+  background-color:#DCDCDC;
+  width:45px;
+  height:45px;
+  border-radius:50px;
+  color:white;
+  text-align:center;
+  }
+	.style-input{
+		width: 293px;
+		height: 47px;
+		margin-top:82px;
+		background: #F6F6F6;
+		border-radius: 7px;
+}
+	.style-button2{
+		width:292px;
+		height:48px;
+		border-radius:12px;
+		font-family: Inter;
+        font-style: normal;
+		background-color:#6C5DD3;
+		color:#FFFFFF;
+		margin-top: -10px;
+		
+	}
+	.avatar-style{
+		width:132px;
+		height:132px;
+		margin-top:34px;
+	}
+	.style-input2{
+		height: 46.53986358642578px;
+        width: 232.6992950439453px;
+		background: #F6F6F6;
+        border-radius: 6.64855px;
+		margin-top: -10px;
+		margin-bottom:20px;
+	}
+	.style-input3{
+		height: 46.53986358642578px;
+        width: 232.6992950439453px;
+		background: #F6F6F6;
+        border-radius: 6.64855px;
+		margin-top: -10px;
+		margin-bottom:20px;
+	}
+	.style-label-first{
+		font-family: Inter;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 13px;
+		line-height: 21px;
+		color:#C1C2C9;
+		text-align:left;
+		margin-left:50px;
+		
+	}
+	.style-input4{
+		height: 46.53986358642578px;
+        width: 232.6992950439453px;
+		background: #F6F6F6;
+        border-radius: 6.64855px;
+		margin-top: -10px;
+		
+	}
+	.style-label{
+		font-family: Inter;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 13px;
+		line-height: 21px;
+		color:#C1C2C9;
+		text-align:left;
+		margin-left:50px;
+		margin-top:-30px;
+	}
+	input::placeholder {
+	  font-family: Inter;
+	  font-style: normal;
+	  font-weight: 600;
+	  font-size: 15.7762px;
+	  line-height: 17px;
+	  color:  #808191;
+}
+/*  Стили баннера добавление трэка мобильная версия*/
+.mbanner{
+	width:311px;
+	height:500px;
+	background-color:#FFFFFF;
+	border-radius:24px;
+	
+}
+.mbanner-header{
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 110%;
+	margin-left:33px;
+	margin-top:29px;
+	width:193px;
+}
+.mbanner-text{
+	font-family: Inter;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 135%;
+    color: #242731;
+	width:252px;
+	margin-left:33px;
+	margin-top:20px;
+}
+.madd-track{
+	align-items: center;
+	padding: 13px;
+
+	
+	width: 163px;
+	height: 47px;
+	
+
+	background: #6C5DD3;
+	border-radius: 12px;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 20px;
+    color: #FFFFFF;
+	display:flex;
+	flex-direction:row;
+}
+.mimg-button-addtrack{
+	width:21px;
+	height:21px;
+	background-color:#8579DA;
+	border-radius:50px;
+	color:#FFFFFF;
+	margin-left:-33px;
+}
+.mimg-banner{
+	width:311px;
+	height:850px;
+	overflow:hidden;
+}
+.mbannerimg{
+	width: 440px;
+    height: 312px;
+}
+.add-track2{
+	margin-top: 20px;
+    margin-left: 33px;
+}
+/*  Стили баннера добавление трэка планшетная версия*/
+.plbanner{
+	width:627px;
+	height:240px;
+	background-color:#FFFFFF;
+	border-radius:24px;
+	display:flex;
+	flex-direction:row;
+	padding-left:33px;
+	
+}
+.plbannerimg{
+	width:452px;
+	height:250px;
+	margin-left:306px;
+}
+.plbanner-header{
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 110%;
+	padding-top:29px;
+}
+.plbannertext{
+	width:256px;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 135%;
+	padding-top:20px;
+}
+
+.plimg-button-addtrack{
+	width:21px;
+	height:21px;
+	background-color:#8579DA;
+	border-radius:50px;
+	color:#FFFFFF;
+	margin-right:10px;
+}
+.plbanner{
+	height:250px;
+	overflow:hidden;
+}
+.plbanner-img{
+	width:550px;
+}
+
+
+/*  Стили контейнера списка трэков */
+.container-ultrack{
+	display:flex;
+	display:row;
+}
+.container-ultrack-blockleft{
+	background-color:#FFFFFF;
+	width:374px;
+	height:94px;
+	display:flex;
+	display:row;
+	margin-left:116px;	
+	border-radius:24px;
+}
+.container-ultrack-blockright{
+	background-color:#FFFFFF;
+	width:374px;
+	height:94px;
+	margin-left:55px;
+	border-radius:24px;
+	display:flex;
+	display:row;
+	
+}
+.img-addtrack{
+	width:56px;
+	height:56px;
+	margin-left:19px;
+	margin-top:26px;
+}
+.text1{
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 19px;
+	line-height: 23px;
+	margin-left:8px;
+	margin-top:35px;
+	color:#808191;
+}
+.img-sollist{
+	width:63px;
+	height:63px;
+	margin-left:25px;
+	margin-top:16px;
+}
+.text2{
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 19px;
+	line-height: 23px;
+	color: #808191;
+	margin-left:6px;
+	margin-top:26px;
+}
+.text3{
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 18px;
+    color: #808191;
+	margin-left:6px;
+	margin-top:3px;
+}
