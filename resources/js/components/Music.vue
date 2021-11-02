@@ -210,7 +210,7 @@
             </div>	
 				
 			<!-- Баннер мобильная версия -->
-			<div class="mbanner" v-if="(windowWidth<321)&(musicListLength==0)">
+			<div class="mbanner" v-if="(windowWidth<450)&(musicListLength==0)">
                <div class="mtexts-banner">
                   <div class="mbanner-header">Загрузи свой первый трек</div>
                   <div class="mbanner-text">Твои будущие фанаты ждут! Жми на кнопку «добавить трек» и переходи к продвижению прямо сейчас.</div>
@@ -221,7 +221,7 @@
             </div>
           </div>
             <!-- Баннер планшетная версия -->
-			<div class="plbanner" v-if="((windowWidth<=1024)&(windowWidth>321)&(musicListLength==0))">
+			<div class="plbanner" v-if="((windowWidth<=1024)&(windowWidth>450)&(musicListLength==0))">
 					<div class="pltexts-banner">
 							<div class="plbanner-header">Загрузи свой первый трек</div>
 							<div class="plbannertext">Твои будущие фанаты ждут! Жми на кнопку «добавить трек» и переходи к продвижению прямо сейчас.</div>
