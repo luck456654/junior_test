@@ -248,11 +248,11 @@
 	  
 	  <p class="style-label-first" >Cсылка на звук в TikTok</br></p>
 		<input class="style-input2" placeholder="Cсылка на звук в TikTok" v-model="lincktrack"></p></input>
-	  <p class="style-label">Название</br></p>
+	  <p class="style-label style-label2">Название</br></p>
 		<input class="style-input2" placeholder="Название трека" v-model="nametrack"></p></input>
-	  <p class="style-label" >Исполнитель</br></p>
+	  <p class="style-label style-label2" >Исполнитель</br></p>
 		<input class="style-input2" placeholder="Исполнитель трека" v-model="sollisttrack"></p></input>
-	  <p class="style-label" >Альбом</br></p>
+	  <p class="style-label style-label2" >Альбом</br></p>
 		<input class="style-input4" placeholder="Альбом трека" v-model="albumtrack"></p></input>
 	 </center>
 	 <center><button class="style-button2" @click="addedtrack">Добавить</button></center>
@@ -261,8 +261,9 @@
 </div>	
 				
 	
+	
 	<!-- Список добавленных трэков -->
-	<div class="container-ultrack" v-if="musicListLength>0">
+	<div class="container-ultrack" v-if="(musicListLength>0)&&(windowWidth>450)">
 		<div class="container-ultrack-blockleft">
 			<img src="/images/img.png" class="img-addtrack">
 			<a class="butksaton-satokavate text1" href="#clafolowing-dashows">Добавить трэк</a>
@@ -278,9 +279,34 @@
 	</div>
 	
 </div>		
-			
+	<!-- Список добавленных трэков мобильная версия-->
+	<div v-if="(musicListLength>0)&&(windowWidth<450)">
+		<center>
+			<div class="container-ultrack-blockright container-ulmobile"  v-for="item in musicList">
+				<img src="/images/avatar.png" class="img-addtrack">
+				<div>
+				<div class="text2">{{item.author}}</div>
+				<a :href="item.url" class="text32">{{item.title}}</a>
+				</div>
+			</div>
+		</center>
+	</div>
+		
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		
 				
-            </div>
+           
+		   </div>
         </div>
 
         <b-modal id="music-modal" centered hide-footer>
