@@ -204,32 +204,32 @@
 				<div class="texts-banner">
 					<div class="banner-header">Загрузи свой первый трек</div>
 					<div class="bannertext">Твои будущие фанаты ждут! Жми на кнопку «добавить трек» и переходи к продвижению прямо сейчас.</div>
-					<a class="butksaton-satokavate" href="#clafolowing-dashows"><button class="add-track "><div class="img-button-addtrack">+</div>Добавить трэк</button></a>
+					<a class="butksaton-satokavate" href="#clafolowing-dashows"><button class="add-track "><div class="img-button-addtrack">+</div ><div class="textAddTrackDesck">Добавить трэк</div></button></a>
                 </div>
-                <img :src="bannermain" class="bannerimg"></img>
+                <img src="/images/banner.png" class="bannerimg" ></img>
             </div>	
 				
 			<!-- Баннер мобильная версия -->
-			<div class="mbanner" v-if="(windowWidth<321)&(musicListLength==0)">
+			<div class="mbanner" v-if="(windowWidth<450)&(musicListLength==0)">
                <div class="mtexts-banner">
                   <div class="mbanner-header">Загрузи свой первый трек</div>
                   <div class="mbanner-text">Твои будущие фанаты ждут! Жми на кнопку «добавить трек» и переходи к продвижению прямо сейчас.</div>
-                 <a class="butksaton-satokavate" href="#clafolowing-dashows"><button class="add-track add-track2"><div class="img-button-addtrack">+</div>Добавить трэк</button></a>
+                 <a class="butksaton-satokavate" href="#clafolowing-dashows"><button class="add-track add-track2"><div class="img-button-addtrack">+</div><div class="mbanner-text-button">Добавить трэк</div></button></a>
                   <div class="mimg-banner">
-               <img src="/images/banner.png" class="mbannerimg"></img>
+               <img src="/images/banner3.png" class="mbannerimg"></img>
                </div>
             </div>
           </div>
             <!-- Баннер планшетная версия -->
-			<div class="plbanner" v-if="((windowWidth<=1024)&(windowWidth>321)&(musicListLength==0))">
+			<div class="plbanner" v-if="((windowWidth<=1024)&(windowWidth>450)&(musicListLength==0))">
 					<div class="pltexts-banner">
-							<div class="plbanner-header">Загрузи свой первый трек</div>
+							<div class="plbanner-header">Загрузи свой </br>первый трек</div>
 							<div class="plbannertext">Твои будущие фанаты ждут! Жми на кнопку «добавить трек» и переходи к продвижению прямо сейчас.</div>
-					<a class="butksaton-satokavate" href="#clafolowing-dashows"><button class="add-track add-track3"><div class="img-button-addtrack">+</div>Добавить трэк</button></a>
+					<a class="butksaton-satokavate" href="#clafolowing-dashows"><button class="add-track add-track3"><div class="img-button-addtrack">+</div><div class="plbanner-text-button">Добавить трэк</div></button></a>
                  
 					</div>
 					<div class="plbanner">
-					<img src="/images/banner.png" class="plbanner-img"></img>
+					<img src="/images/banner2.png" class="plbanner-img"></img>
 				</div>
 			</div>
 

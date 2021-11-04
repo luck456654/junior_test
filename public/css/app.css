@@ -10779,9 +10779,7 @@ body.dark .products__row_head {
 }
 
 .bannerimg {
-  width: 452px;
-  height: 250px;
-  margin-left: 206px;
+  margin-left: 60px;
 }
 
 .banner-header {
@@ -10791,16 +10789,18 @@ body.dark .products__row_head {
   font-size: 24px;
   line-height: 110%;
   padding-top: 29px;
+  max-width: 193px;
 }
 
 .bannertext {
-  width: 256px;
+  width: 264px;
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
   line-height: 135%;
   padding-top: 20px;
+  margin-right: 26px;
 }
 
 .add-track {
@@ -10818,18 +10818,30 @@ body.dark .products__row_head {
   color: #FFFFFF;
   display: flex;
   flex-direction: row;
+  margin-top: 20px;
 }
 
 .img-button-addtrack {
-  width: 21px;
-  height: 21px;
+  width: 25px;
+  height: 25px;
   background-color: #8579DA;
   border-radius: 50px;
   color: #FFFFFF;
-  margin-right: 5px;
+  margin-top: 4px;
+  font-size: 20px;
+  padding-top: 2px;
 }
 
-/*  Стили модального окна добавление трэка десктопная версия*/
+.textAddTrackDesck {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 10px;
+}
+
+/*  Стили модального окна добавление трэка */
 .anelumen {
   display: flex;
   position: fixed;
@@ -10861,7 +10873,7 @@ body.dark .products__row_head {
 
 .anelumen.lowingnuska figure {
   width: 381px;
-  height: 581px;
+  height: 621px;
   background: #FFFFFF;
   border-radius: 32px;
   padding-top: 8px;
@@ -10908,6 +10920,7 @@ body.dark .products__row_head {
   border-radius: 50px;
   color: white;
   text-align: center;
+  margin-right: -10px;
 }
 
 .style-input {
@@ -10916,10 +10929,11 @@ body.dark .products__row_head {
   margin-top: 82px;
   background: #F6F6F6;
   border-radius: 7px;
+  border-color: #F6F6F6;
 }
 
 .style-button2 {
-  width: 292px;
+  width: 232px;
   height: 48px;
   border-radius: 12px;
   font-family: Inter;
@@ -10932,7 +10946,7 @@ body.dark .products__row_head {
 .avatar-style {
   width: 132px;
   height: 132px;
-  margin-top: 34px;
+  margin-top: 16px;
 }
 
 .style-input2 {
@@ -10942,6 +10956,7 @@ body.dark .products__row_head {
   border-radius: 6.64855px;
   margin-top: -10px;
   margin-bottom: 20px;
+  border-width: 0;
 }
 
 .style-input3 {
@@ -10951,6 +10966,7 @@ body.dark .products__row_head {
   border-radius: 6.64855px;
   margin-top: -10px;
   margin-bottom: 20px;
+  border-width: 0;
 }
 
 .style-label-first {
@@ -10962,6 +10978,13 @@ body.dark .products__row_head {
   color: #C1C2C9;
   text-align: left;
   margin-left: 50px;
+  margin-top: 30px;
+  margin-left: 45px;
+  border-width: 0;
+}
+
+.style-label2 {
+  margin-top: 20px;
 }
 
 .style-input4 {
@@ -10970,6 +10993,7 @@ body.dark .products__row_head {
   background: #F6F6F6;
   border-radius: 6.64855px;
   margin-top: -10px;
+  border-width: 0;
 }
 
 .style-label {
@@ -10991,6 +11015,7 @@ input::-moz-placeholder {
   font-size: 15.7762px;
   line-height: 17px;
   color: #808191;
+  padding-left: 5px;
 }
 
 input:-ms-input-placeholder {
@@ -11000,6 +11025,7 @@ input:-ms-input-placeholder {
   font-size: 15.7762px;
   line-height: 17px;
   color: #808191;
+  padding-left: 5px;
 }
 
 input::placeholder {
@@ -11009,9 +11035,10 @@ input::placeholder {
   font-size: 15.7762px;
   line-height: 17px;
   color: #808191;
+  padding-left: 5px;
 }
 
-/*  Стили баннера добавление трэка мобильная версия*/
+/*  Стили баннера мобильная версия*/
 .mbanner {
   width: 311px;
   height: 500px;
@@ -11028,6 +11055,7 @@ input::placeholder {
   margin-left: 33px;
   margin-top: 29px;
   width: 193px;
+  padding-top: 29px;
 }
 
 .mbanner-text {
@@ -11040,6 +11068,10 @@ input::placeholder {
   width: 252px;
   margin-left: 33px;
   margin-top: 20px;
+}
+
+.mbanner-text-button {
+  margin-left: 4px;
 }
 
 .madd-track {
@@ -11070,13 +11102,11 @@ input::placeholder {
 
 .mimg-banner {
   width: 311px;
-  height: 850px;
-  overflow: hidden;
 }
 
 .mbannerimg {
-  width: 440px;
-  height: 312px;
+  width: 310px;
+  margin-top: -100px;
 }
 
 .add-track2 {
@@ -11084,7 +11114,16 @@ input::placeholder {
   margin-left: 33px;
 }
 
-/*  Стили баннера добавление трэка планшетная версия*/
+.addTrackText3 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 4px;
+}
+
+/*  Стили баннера планшетная версия*/
 .plbanner {
   width: 627px;
   height: 240px;
@@ -11135,7 +11174,16 @@ input::placeholder {
 }
 
 .plbanner-img {
-  width: 550px;
+  margin-left: -70px;
+}
+
+.plbanner-text-button {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 10px;
 }
 
 /*  Стили контейнера списка трэков */
@@ -11162,6 +11210,7 @@ input::placeholder {
   border-radius: 24px;
   display: flex;
   display: row;
+  margin-bottom: 10px;
 }
 
 .img-addtrack {
@@ -11180,6 +11229,7 @@ input::placeholder {
   margin-left: 8px;
   margin-top: 35px;
   color: #808191;
+  border-width: 0;
 }
 
 .img-sollist {
@@ -11209,6 +11259,17 @@ input::placeholder {
   color: #808191;
   margin-left: 6px;
   margin-top: 3px;
+}
+
+.container-ulmobile {
+  margin-left: 0px;
+  max-width: 311px;
+  height: 94px;
+}
+
+.text32 {
+  margin-left: -30px;
+  color: #808191;
 }
 
 .page {
